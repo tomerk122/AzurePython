@@ -1,16 +1,4 @@
-"""המעבדה
-Working with python vs the azure cloud - Exercise
 
-------------------------------------------------------
-
-* delete your machine that was brought up using terraform (if it still exists)
-* Write two scripts: up.py and down.py.
-* The first script will bring up a machine just like the one you brought up
-using terraform but using a python script.
-* The second script will tear everything down.
-* Use the azure-* appropriate python module.
-* Do not hardcode any credentials in the script itself (use the same environment
-variables and client id and secret that you used with the terraform solution)."""
 try:
     from azure.identity import DefaultAzureCredential
     from azure.mgmt.compute import ComputeManagementClient
